@@ -1,0 +1,12 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+images/
+*.png
+*.jpg
+checkpoints/
+data/
+logs/
+wandb/
+.DS_Store

@@ -1,0 +1,11 @@
+[project]
+name = "ml-devbox"
+version = "0.1.0"
+requires-python = ">=3.10"
+dependencies = [
+    "simple-parsing",
+    "rich",
+    "datasets",
+    "wandb",
+    "ipykernel",
+]
