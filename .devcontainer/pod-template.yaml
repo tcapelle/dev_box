@@ -24,8 +24,6 @@ spec:
       emptyDir:
         medium: Memory
         sizeLimit: 64Gi
-  nodeSelector:
-    gpu.nvidia.com/class: H200
   tolerations:
     - key: "nvidia.com/gpu"
       operator: "Exists"
