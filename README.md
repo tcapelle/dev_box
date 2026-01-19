@@ -1,6 +1,6 @@
 # ML DevBox
 
-Development container for ML work on H200 GPUs.
+Development container for ML work on GPU
 
 ## Setup
 
@@ -8,6 +8,7 @@ Development container for ML work on H200 GPUs.
 ```bash
 export WANDB_API_KEY=your_key
 export ANTHROPIC_API_KEY=your_key
+export OPENAI_API_KEY=your_key
 ```
 
 2. Start the devbox:
