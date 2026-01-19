@@ -5,8 +5,7 @@
   "containerEnv": {
     "WANDB_API_KEY": "${localEnv:WANDB_API_KEY}",
     "ANTHROPIC_API_KEY": "${localEnv:ANTHROPIC_API_KEY}",
-    "CUDA_VISIBLE_DEVICES": "0",
-    "GPU_TYPE": "H200"
+    "OPENAI_API_KEY": "${localEnv:OPENAI_API_KEY}"
   },
 
   "postCreateCommand": "bash .devcontainer/setup.sh",

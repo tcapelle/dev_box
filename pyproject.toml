@@ -8,4 +8,5 @@ dependencies = [
     "datasets",
     "wandb",
     "ipykernel",
+    "einops",
 ]
