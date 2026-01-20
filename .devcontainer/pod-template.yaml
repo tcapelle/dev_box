@@ -4,26 +4,20 @@ metadata:
   name: devpod-placeholder
 spec:
   containers:
-    - name: devbox
-      resources:
-        limits:
-          nvidia.com/gpu: "1"
-          memory: "256Gi"
-          cpu: "32"
-        requests:
-          nvidia.com/gpu: "1"
-          memory: "256Gi"
-          cpu: "32"
-      securityContext:
-        privileged: true
+    - name: devpod
       volumeMounts:
         - name: dshm
           mountPath: /dev/shm
+        - name: new-pvc
+          mountPath: /mnt/new-pvc
   volumes:
     - name: dshm
       emptyDir:
         medium: Memory
-        sizeLimit: 64Gi
+        sizeLimit: 32Gi
+    - name: new-pvc
+      persistentVolumeClaim:
+        claimName: new-pvc
   tolerations:
     - key: "nvidia.com/gpu"
       operator: "Exists"

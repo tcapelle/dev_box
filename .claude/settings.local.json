@@ -15,7 +15,11 @@
       "Bash(git add:*)",
       "Bash(git commit:*)",
       "Bash(gh repo create:*)",
-      "Bash(git push:*)"
+      "Bash(git push:*)",
+      "Bash(kubectl config get-contexts:*)",
+      "Bash(kubectl --context pai-amf1-cfd get:*)",
+      "Bash(git remote:*)",
+      "Bash(kubectl:*)"
     ]
   }
 }
