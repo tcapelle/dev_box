@@ -20,7 +20,10 @@ devpod up . --id tcapelle-ml-box
 
 **Base image** (`ghcr.io/tcapelle/dev_box`):
 - PyTorch 2.9 + CUDA 13.1
-- zsh + starship + fzf + eza + zoxide + bat + ripgrep
+- Claude Code CLI + Codex CLI — AI coding agents ready to use
+- gh (GitHub CLI)
+- Node.js 22 + npm
+- zsh + starship + fzf + eza + zoxide + bat + ripgrep + yq
 - neovim with LSP
 - uv (fast pip)
 - dotfiles pre-configured
