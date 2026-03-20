@@ -17,6 +17,12 @@ RUN wget -qO- https://raw.githubusercontent.com/eza-community/eza/main/deb.asc |
     echo "deb [signed-by=/etc/apt/keyrings/gierens.gpg] http://deb.gierens.de stable main" | tee /etc/apt/sources.list.d/gierens.list && \
     apt-get update && apt-get install -y eza && rm -rf /var/lib/apt/lists/*
 
+# Install Node.js 22 (needed for Codex CLI) + yq
+RUN curl -fsSL https://deb.nodesource.com/setup_22.x | bash - && \
+    apt-get install -y nodejs && rm -rf /var/lib/apt/lists/* && \
+    curl -fsSL https://github.com/mikefarah/yq/releases/latest/download/yq_linux_amd64 -o /usr/local/bin/yq && \
+    chmod +x /usr/local/bin/yq
+
 # Install uv
 RUN pip install uv
 
